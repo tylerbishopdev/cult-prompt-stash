@@ -30,7 +30,7 @@ export function PromptCard({
       <TextureCard
         className={cn(
           originalPrompt.id === prompt.selected
-            ? "shadow-inner border border-black/10 bg-white dark:bg-muted/60 ring-1 ring-offset-2 ring-offset-background ring-accent/30  transition-colors duration-200"
+            ? "shadow-inner border border-zinc-400 bg-white dark:bg-muted/60 ring-1 ring-offset-2 ring-offset-background ring-accent/30  transition-colors duration-200"
             : ""
         )}
       >
@@ -112,8 +112,8 @@ function SelectPromptButton({
         "relative overflow-hidden text-xs rounded-br-xl  transition-all duration-300 w-24 h-9 disabled:opacity-100 ",
         "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2",
         isSelected
-          ? "bg-none text-primary"
-          : "bg-secondary/80 hover:bg-secondary hover:text-secondary-foreground  text-muted-foreground shadow-elevation-light dark:shadow-elevation-dark"
+          ? "bg-none text-primary border-zinc-400"
+          : "bg-secondary/80 border-zinc-400 hover:bg-secondary hover:text-secondary-foreground  text-muted-foreground shadow-elevation-light dark:shadow-elevation-dark"
       )}
     >
       <AnimatePresence mode="wait">

@@ -59,7 +59,7 @@ export const DesktopLayout: React.FC<PromptLibraryProps> = ({
         {/* LEFT PANEL */}
         <ResizablePanelGroup
           direction="horizontal"
-          className=" bg-zinc-900 text-zinc-500   items-stretch"
+          className=" bg-black/90 text-zinc-500   items-stretch"
         >
           <ResizablePanel
             defaultSize={15}
@@ -122,7 +122,7 @@ export const DesktopLayout: React.FC<PromptLibraryProps> = ({
               </div>
 
               {/* All Prompts */}
-              <TabsContent value="all" className="m-0">
+              <TabsContent value="all " className="m-0">
                 <ScrollArea className="h-[calc(100vh-129px)] z-20 bg-zinc-900/95">
                   <div className=" m-3 ">
                     <AnimatePresence initial={false}>
@@ -166,7 +166,7 @@ export const DesktopLayout: React.FC<PromptLibraryProps> = ({
               </TabsContent>
 
               {/* Bookmarked Prompts */}
-              <TabsContent value="bookmarked" className="m-0">
+              <TabsContent value="bookmarked" className="m-0 ">
                 <ScrollArea className="h-[calc(100vh-129px)] ">
                   <div className="flex flex-col gap-3 pb-48 pt-4 p-4 ">
                     {bookmarkedPrompts.map((prompt, index) => (
